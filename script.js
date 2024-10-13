@@ -19,11 +19,14 @@ document.addEventListener('DOMContentLoaded', function() {
         // Create a new list item for the task
         const listItem = document.createElement('li');
         listItem.textContent = taskText;
+        listItem.classList.add('task-item');
+
+        // ["classList.add"]
 
         // Create a remove button for the task
         const removeButton = document.createElement('button');
         removeButton.textContent = 'Remove';
-        removeButton.className = 'remove-btn';
+        removeButton.classList.add('remove-btn');
 
         // Event to remove the task
         removeButton.onclick = function() {
